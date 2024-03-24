@@ -19,3 +19,6 @@ Foram recebidos 7.3mb de dados (420kB/s)
 As requisições duraram em média 149.6ms para serem respondidas para o cliente
 ### Taxa de sucesso nas requisições
 Das 24496 requisições feitas, 18361 (74.95%) foram mal-sucedidas e 6135 (25.05%) foram bem sucedidas
+
+### Resultado do teste
+A aplicação não é capaz de lidar com uma grande carga de usuários em um espaço curto de tempo, a aplicação acaba sendo derrubada, necessitando que ela seja levantada novamente. Para resolver isso, será necessário implementar tratativas de erros na aplicação, como o try catch, para impedir que a mesma quebre quando não consegue lidar com erros. A implementação de um sistema de filas para acesso ao banco e controle de carga auxiliaria a aplicação a lidar com essas altas cargas de solicitações.
